@@ -1,0 +1,271 @@
+@import './_partials/contact-information';
+
+input[type=text], select {
+  outline: 0;
+  border-radius: 3px;
+  border: solid 1px #e4e9f0;
+  background: #fff;
+  height: 40px;
+  padding-left: 10px;
+  width: 100%;
+
+  &::placeholder {
+    opacity: 0.3;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: #8a9bab;
+  }
+}
+
+.control-label {
+  cursor: default;
+  padding-top: 10px !important;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  border-radius: 3px;
+  background-color: #7c8f9c;
+}
+
+.tooltip {
+  .tooltip-inner {
+    background-color: #7c8f9c;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+
+  }
+  .tooltip-arrow {
+    border-bottom-color: #7c8f9c !important;
+  }
+}
+
+.fa-info-circle {
+  color: #7c8f9c;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.form-horizontal .form-group > label {
+  text-align: left !important;
+}
+
+.btn-primary, .btn-default {
+  height: 40px;
+  font-family: 'LatoWebBold';
+  letter-spacing: 0.2px;
+}
+
+.btn-primary {
+  border-radius: 3px;
+  background-color: $primary-color;
+  border: none;
+
+  &:hover, &:focus {
+    background: lighten($primary-color, 10%);
+
+  }
+}
+
+.btn-sm {
+  height:32px;
+}
+
+.nav-tabs {
+  & > li{
+    position: relative;
+    & > a {
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      color: #7c8f9c;
+      border: none;
+      border-radius: 0;
+
+      &:hover, &:focus {
+        background: transparent;
+        border-color: transparent;
+        color: #345366;
+        cursor: pointer;
+      }
+
+      &:hover:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 4px solid #0092ff;
+        width: 100%;
+      }
+    }
+  }
+
+  & > li.active > a, & > li.active > a:hover, & > li.active > a:focus {
+    color: #345366;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  & > li.active > a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border: none;
+    border-bottom: 4px solid #0092ff;
+    width: 100%;
+  }
+}
+
+.custom-radio-button {
+  display: none;
+  & + label{
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #7c8f9c;
+  }
+  & + label:before {
+    background: #ffffff;
+    border: solid 1px #e4e9f0;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: 0;
+  }
+  &:checked + label:after {
+    content: ' ';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    background: #7c8f9c;
+    border: solid 1px #7c8f9c;
+    top: 4px;
+    left: 2px;
+  }
+  &:checked + label:before {
+    color: #345366;
+    border: 1px solid #7c8f9c;
+  }
+}
+
+.custom-checkbox-button {
+  display: none;
+  & + label{
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #7c8f9c;
+    font-weight: normal;
+  }
+  & + label:before {
+    content: '';
+    background: #ffffff;
+    border: solid 1px #e4e9f0;
+    border-radius: 3px;
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: 0;
+  }
+  &:checked + label:after {
+    content: '✔';
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    position: absolute;
+    background: #7c8f9c;
+    font-size: 12px;
+    text-align: center;
+    border: solid 1px #7c8f9c;
+    color: #FFFFFF;
+    top: 1px;
+    left: 0;
+  }
+  &:checked + label:before {
+    color: #345366;
+    border: 1px solid #7c8f9c;
+  }
+}
+
+.panel-head-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #345366;
+}
+
+.panel-head-subtitle {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #8a9198;
+  margin-top: 7px;
+}
+
+.send-btn{
+  font-size: 14px;
+  width: 96px;
+  height: 40px;
+  background: #0092ff;
+}
+
+.cancel-btn{
+  width: 96px;
+  height: 40px;
+  color: #7c8f9c;
+  border-color: #7c8f9c;
+}
+
+.reset-btn{
+  width: 80px;
+  height: 32px;
+  background: #FFFFFF;
+  border: solid 1px #7c8f9c;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #7c8f9c;
+  outline: none;
+}
+
+.apply-btn{
+  width: 80px;
+  height: 32px;
+  border:solid 1px #7c8f9c;
+  border-radius: 3px;
+  background: #7c8f9c;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+}
+
+
+.new-add-btn{
+  button, a{
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    max-height: 32px;
+  }
+}

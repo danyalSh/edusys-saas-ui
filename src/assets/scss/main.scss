@@ -1,0 +1,32 @@
+@import "_partials/_global.scss";
+@import "_partials/_util.scss";
+
+body {
+  font-family: LatoWeb, sans-serif;
+  font-size: 14px;
+
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* Responsive CSS */
+
+/* Mobile phones */
+@media (max-width: 480px){
+
+}
+
+/* Tablets */
+@media (max-width: 767px){
+
+
+}
+
+/* Desktop */
+
+@media (max-width: 991px){
+
+}

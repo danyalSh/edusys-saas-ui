@@ -1,0 +1,76 @@
+@import '../_partials/variables';
+
+.panel-academic-unit-list-view {
+
+}
+
+.panel-academic-unit-detail-view {
+
+}
+
+.panel-academic-programme-list-view {
+
+}
+
+.panel-academic-programme-detail-view {
+
+}
+
+.panel-academic-calendar-settings-view {
+
+  .panel-body {
+    position: relative;
+  }
+
+  .season-selection {
+    position: absolute;
+    right: -15px;
+    top: 50px;
+    .form-item {
+      label {
+        margin-right: -15px;
+      }
+
+      select {
+        position: relative;
+        border: solid 1px #e4e9f0;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .form-item {
+
+    div{
+      margin-right: -15px;
+    }
+
+    label {
+      margin-right: -15px;
+    }
+
+    input, button {
+      position: relative;
+      border: solid 1px #e4e9f0;
+      border-radius: 3px;
+    }
+
+    .calendar-icon{
+      position: absolute;
+      top: 9px;
+      right: 25px;
+      i{
+        font-size: 15px;
+        color: #7c8f9c;
+      }
+    }
+  }
+
+  .new-add-season {
+    line-height: 39px;
+    left: 30px;
+    font-size: 16px;
+    color: #0092ff;
+    cursor: pointer;
+  }
+}

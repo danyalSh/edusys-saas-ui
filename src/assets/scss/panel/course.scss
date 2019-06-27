@@ -1,0 +1,19 @@
+// .panel-course-list-view {}
+
+.panel-course-detail-view {
+
+  @media screen and (max-width: 767px) {
+    .line-height-85{
+      line-height: 45px;
+    }
+  }
+
+  .credit-info-item {
+    label{
+      text-align: center;
+      margin-bottom: 6px;
+      font-size: 12px;
+      color: #7c8f9c;
+    }
+  }
+}

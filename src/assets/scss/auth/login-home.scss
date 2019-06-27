@@ -1,0 +1,64 @@
+.auth-login-home-view {
+  .boxes {
+    .box {
+      border-radius: 5px;
+      background-image: radial-gradient(circle at 50% 51%, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.1));
+      box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.16);
+      text-decoration: none;
+      transition: transform 1s, background-color 1s;
+
+      .box-inner {
+        padding: 50px 0;
+      }
+
+      .box-title {
+        display: block;
+        font-family: 'LatoWebHeavy';
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+
+      .box-sub-title {
+        display: block;
+        font-family: 'LatoWebLight';
+        opacity: 0.8;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 0.2px;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 50px 40px 0 rgba(0, 0, 0, 0.16);
+        color: #fff;
+        transform: translate(0, -20px);
+        cursor: pointer;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      & {
+        .box {
+
+          .box-title, .box-sub-title {
+            font-size: 0.8em;
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+
+
+
+
+}

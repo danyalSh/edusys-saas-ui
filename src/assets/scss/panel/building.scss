@@ -1,0 +1,29 @@
+@import '../_partials/variables';
+
+.panel-building-list-view {
+  .panel-head-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #345366;
+  }
+
+  .panel-head-subtitle {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #8a9198;
+    margin-top: 7px;
+  }
+}
+
+.panel-building-detail-view {
+
+  .panel-body {
+    position: relative;
+    .form-group{
+      input{
+        width: 100%;
+      }
+    }
+  }
+
+}

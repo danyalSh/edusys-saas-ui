@@ -1,0 +1,93 @@
+@import "../_partials/_variables.scss";
+
+.auth-pass-reset-view {
+
+  .txt-info {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    color: #8a9bab;
+  }
+
+  .login-content {
+    position: relative;
+
+    .pin-info {
+
+      width: 200px;
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      padding: 10px;
+      background-color: #8a9bab;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      border-radius: 5px;
+      transition: background-color 1s;
+
+
+      &:after {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        content: "";
+        position: absolute;
+        right: 5px;
+        bottom: -4px;
+        border-top: 8px solid #8a9bab;
+        transition: border-top-color 1s;
+      }
+
+      &.finish {
+        background-color: $danger-color;
+
+
+        &:after {
+          border-top-color: $danger-color;
+        }
+      }
+
+      .text {
+        float: left;
+      }
+
+      .second {
+        font-family: LatoWeb;
+        display: block;
+        width: 26px;
+        height: 27px;
+        font-size: 22px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        float: right;
+
+        a, a:hover {
+          color: #fff;
+        }
+      }
+
+      @media (max-width: 768px) {
+        & {
+          width: 175px;
+          padding: 5px;
+          top: 5px;
+          right: 25px;
+
+        }
+      }
+
+    }
+  }
+
+
+
+}
